@@ -11,11 +11,7 @@ export function ArticleListItem({ category, articles }: ArticleListItemProps) {
 
       <div className="flex flex-col gap-2.5 font-poppins text-lg">
         {articles.map((article, index) => (
-          <Link
-            key={index}
-            href={`/${article.id}`}
-            className="text-neutral-900 hover:text-amber-700 transition duration-150"
-          >
+          <Link key={index} href={`/${article.id}`} className="link">
             {article.title}
           </Link>
         ))}

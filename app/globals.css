@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link {
+  @apply text-neutral-900 hover:text-amber-700 transition duration-150
+}
+
+.article {
+  @apply flex flex-col gap-3 font-poppins text-lg tracking-wide mb-20
+}
+
+.article>h1 {
+  @apply font-cormorantGaramond text-4xl text-center tracking-tight
+}
+
+.article>h2 {
+  @apply font-cormorantGaramond text-3xl tracking-tight
+}
+
+.article>ol,
+.article>ul {
+  @apply flex flex-col mx-10 gap-2
+}
+
+.article>ol {
+  @apply list-decimal
+}
+
+.article>ul {
+  @apply list-disc
+}
+
+.article>pre {
+  @apply bg-neutral-950 text-neutral-50 p-5 overflow-scroll
+}
+
+.article>blockquote {
+  @apply pl-5 italic border-l-2 border-neutral-600 border-opacity-40
+}
+
+.article>p>img {
+  @apply w-1/2 mx-auto
+}
